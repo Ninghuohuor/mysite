@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Replica</title>
+  <link rel="stylesheet" href="styles.css?v=principles-face-mask-20260504a">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="script.js?v=project-static-20260503a" defer></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="hero-computer.js?v=hero-pause-offscreen-20260429b"></script>
+  <script type="module" src="particles-bg.js"></script>
+  <script type="module" src="orbit-images.js"></script>
+</head>
+<body>
+  <!-- Pixel trail disabled for performance. -->
+  <div class="cursor-follower" data-cursor-follower aria-hidden="true"></div>
+
+  <div class="hero-pin">
+    <section class="hero-page" id="intro" aria-label="Hero">
+      <figure
+        class="hero-portrait tilted-card-figure"
+        hidden
+        data-portrait-hidden
+        data-tilted-card
+        data-rotate-amplitude="12"
+        data-scale-on-hover="1.08"
+        aria-label="Personal portrait"
+        role="img"
+      >
+        <div class="tilted-card-inner">
+          <img class="tilted-card-img" src="assets/hero-portrait.jpg" alt="Personal portrait">
+        </div>
+        <figcaption class="tilted-card-caption" aria-hidden="true">NingHuohuo</figcaption>
+      </figure>
+
+      <div
+        class="hero-computer"
+        data-hero-computer
+        data-screen-video="https://res.cloudinary.com/divynfoap/video/upload/f_auto,q_auto/v1777333574/4%E6%9C%8828%E6%97%A5_1_awcdzs.mp4"
+        aria-label="3D retro computer"
+        role="img"
+      ></div>
+
+      <header class="site-header" aria-label="Primary">
+        <time class="hero-clock" data-clock datetime="00:00:00">00:00:00</time>
+        <nav>
+          <a href="#manifesto">关于我</a>
+          <a href="#principles">工作原则</a>
+          <a href="#direction">关注方向</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系我</a>
+        </nav>
+      </header>
+
+      <div class="hero-greeting" data-text-type="Hi，我是宁火火 😎；欢迎来到我的个人主页。" aria-live="polite">
+        <span class="text-type">
+          <span class="text-type__content" data-text-type-content>Hi，我是宁火火 😎</span><span class="text-type__cursor" aria-hidden="true">|</span>
+        </span>
+      </div>
+
+      <div class="hero-intro-copy">
+        <p class="hero-intro-text" lang="zh-CN">一个从传统互联网人转型过来，正在用 AI 重做工作方式、内容方式和个人生意的普通人。 不追逐每一个 AI 工具，更关心怎么真正把 AI 用出结果。</p>
+      </div>
+
+      <div class="quiet-intro" aria-hidden="true"></div>
+      <h1
+        class="hero-name variable-proximity-demo"
+        data-variable-proximity
+        data-variable-label="NINGHUOHUO"
+        data-from-font-variation-settings="'wght' 700, 'opsz' 8"
+        data-to-font-variation-settings="'wght' 1000, 'opsz' 72"
+        data-variable-radius="140"
+        data-variable-falloff="linear"
+      >NINGHUOHUO</h1>
+    </section>
+  </div>
+
+  <main class="page-stack">
+    <section class="manifesto" id="manifesto" aria-label="Manifesto">
+      <div
+        class="manifesto-copy"
+        data-scroll-reveal
+        data-base-opacity="0.1"
+        data-base-rotation="9"
+        data-blur-strength="7"
+        data-enable-blur="true"
+        data-rotation-end="bottom bottom"
+        data-word-animation-end="bottom bottom"
+      >
+        <div class="scroll-reveal-text">
+          <p class="manifesto-en">
+            Based in Zhejiang. An introvert with shifting signal strength,
+            good at daydreaming, and sometimes mildly sharp-tongued. From engineering
+            to UI/UX, from ToC and ToB products to startups and commerce. Now I am
+            starting from zero as an AI content creator, rebuilding my work, my brand,
+            and myself with AI.
+          </p>
+          <p class="manifesto-zh" lang="zh-CN">
+            坐标浙江，纯度忽高忽低的I人，擅长白日梦，偶尔轻微毒舌。
+            在杭州上大学的时候，一直怀揣着想做一个真正能改变人们生活方式的产品的梦想。
+            所以毕业后，并没有走原来的工科专业，而是转去做了 UI/UX 设计。因为那时候觉得，这是对我来说离产品经理最近也是最适合的一条路。
+            后来，我进过 ToC / ToB 的互联网产品公司，也做过创业和实体电商。踩过产品、流量、转化、交付里的很多坑。
+            现在，我正在从0开始做AI内容创作者。
+            记录自己如何学习 AI，如何用 AI 搭建内容工作流，如何做产品、做个人品牌，以及一个普通人用 AI 重做自己的真实过程。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="selected-projects" id="principles" aria-labelledby="brag-title">
+      <div class="principles-sticky">
+        <h1 id="brag-title"><span aria-hidden="true">↘</span> 我相信的工作原则</h1>
+        <p class="principles-intro-copy" lang="zh-CN" data-text-type data-text-type-mode="once" data-text-type-trigger="in-view" data-text-type-speed="28" aria-live="polite">
+          <span class="text-type principles-intro-type">
+            <span class="text-type__content" data-text-type-content>我不迷信任何一个人。<br>但我会长期观察那些真正改变我思考方式的人。<br>他们有的是 AI 公司创始人，有的是研究者，有的是创作者，有的是一人公司实践者。<br>I do not put blind faith in any one person. But I keep observing the people who genuinely change the way I think. Some are AI company founders, some are researchers, some are creators, and some are solo-company practitioners.</span><span class="text-type__cursor" aria-hidden="true">|</span>
+          </span>
+        </p>
+        <div class="principles-scroll-stage" data-principles-scroll-stage aria-label="People and principles scroll sequence">
+        <div class="principles-track">
+          <article class="principles-slide" data-principles-slide>
+            <div class="principles-copy">
+              <h2 class="principles-person">Ethan Mollick</h2>
+              <p class="principles-role">Wharton professor, AI and work researcher</p>
+              <blockquote class="principles-quote">
+                <span class="principles-quote-en">Always invite AI to the table. You should try inviting AI to help you in everything you do.</span>
+                <span class="principles-quote-zh" lang="zh-CN">永远让 AI 上桌。你应该尝试让 AI 参与到你做的每一件事里。</span>
+              </blockquote>
+            </div>
+            <figure class="principles-photo-card" data-principles-decay-card>
+              <img src="assets/principles/ethan-mollick.png" alt="Ethan Mollick portrait">
+            </figure>
+          </article>
+          <article class="principles-slide" data-principles-slide>
+            <div class="principles-copy">
+              <h2 class="principles-person">Naval Ravikant</h2>
+              <p class="principles-role">AngelList co-founder, investor, entrepreneurial thinker</p>
+              <blockquote class="principles-quote">
+                <span class="principles-quote-en">Code and media are permissionless leverage. They're the leverage behind the newly rich. You can create software and media that works for you while you sleep.</span>
+                <span class="principles-quote-zh" lang="zh-CN">代码和媒体，是不需要许可的杠杆。它们是新富人背后的杠杆。你可以创造软件和媒体，让它们在你睡觉的时候继续为你工作。</span>
+              </blockquote>
+            </div>
+            <figure class="principles-photo-card" data-principles-decay-card>
+              <img src="assets/principles/naval-ravikant.png" alt="Naval Ravikant portrait">
+            </figure>
+          </article>
+          <article class="principles-slide" data-principles-slide>
+            <div class="principles-copy">
+              <h2 class="principles-person">Kevin Kelly</h2>
+              <p class="principles-role">Founding executive editor of WIRED, technology thinker, author of "1,000 True Fans"</p>
+              <blockquote class="principles-quote">
+                <span class="principles-quote-en">To be a successful creator, you don't need millions. You need only thousands of true fans.</span>
+                <span class="principles-quote-zh" lang="zh-CN">成为一个成功的创作者，你不需要几百万粉丝，你只需要几千个真正的粉丝。</span>
+              </blockquote>
+            </div>
+            <figure class="principles-photo-card" data-principles-decay-card>
+              <img src="assets/principles/kevin-kelly.png" alt="Kevin Kelly portrait">
+            </figure>
+          </article>
+          <article class="principles-slide" data-principles-slide>
+            <div class="principles-copy">
+              <h2 class="principles-person">Andrej Karpathy</h2>
+              <p class="principles-role">Former OpenAI and Tesla AI leader, computer scientist, AI educator</p>
+              <blockquote class="principles-quote">
+                <span class="principles-quote-en">Software 1.0 is eating the world, and now AI / Software 2.0 is eating software.</span>
+                <span class="principles-quote-zh" lang="zh-CN">软件正在吞噬世界，而 AI 正在吞噬软件本身。</span>
+              </blockquote>
+            </div>
+            <figure class="principles-photo-card" data-principles-decay-card>
+              <img src="assets/principles/andrej-karpathy.png" alt="Andrej Karpathy portrait">
+            </figure>
+          </article>
+          <article class="principles-slide" data-principles-slide>
+            <div class="principles-copy">
+              <h2 class="principles-person">Dan Koe</h2>
+              <p class="principles-role">Solo-business creator, personal-brand and creator-monetization blogger</p>
+              <blockquote class="principles-quote">
+                <span class="principles-quote-en">Solve your own problems, write about them online, and attract people who are trying to solve the same problems.</span>
+                <span class="principles-quote-zh" lang="zh-CN">解决你自己的问题，把过程写到网上，然后吸引那些正在解决同样问题的人。</span>
+              </blockquote>
+            </div>
+            <figure class="principles-photo-card" data-principles-decay-card>
+              <img src="assets/principles/dan-koe.png" alt="Dan Koe portrait">
+            </figure>
+          </article>
+          <article class="principles-slide" data-principles-slide>
+            <div class="principles-copy">
+              <h2 class="principles-person">Reid Hoffman</h2>
+              <p class="principles-role">LinkedIn co-founder, investor, Silicon Valley entrepreneur</p>
+              <blockquote class="principles-quote">
+                <span class="principles-quote-en">If you are not embarrassed by the first version of your product, you've launched too late.</span>
+                <span class="principles-quote-zh" lang="zh-CN">如果你对产品的第一个版本一点都不感到尴尬，那说明你发布得太晚了。</span>
+              </blockquote>
+            </div>
+            <figure class="principles-photo-card" data-principles-decay-card>
+              <img src="assets/principles/reid-hoffman.png" alt="Reid Hoffman portrait">
+            </figure>
+          </article>
+          <article class="principles-slide" data-principles-slide>
+            <div class="principles-copy">
+              <h2 class="principles-person">Ali Abdaal</h2>
+              <p class="principles-role">Doctor-turned video creator and productivity blogger</p>
+              <blockquote class="principles-quote">
+                <span class="principles-quote-en">The most successful creators are not the ones who know the most, but the ones who share what they are learning.</span>
+                <span class="principles-quote-zh" lang="zh-CN">最成功的创作者，不一定是知道最多的人，而是愿意分享自己正在学习什么的人。</span>
+              </blockquote>
+            </div>
+            <figure class="principles-photo-card" data-principles-decay-card>
+              <img src="assets/principles/ali-abdaal.png" alt="Ali Abdaal portrait">
+            </figure>
+          </article>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="direction-image-panel" aria-label="我关注的方向大图">
+      <figure class="direction-feature">
+        <img src="assets/direction/direction-studio-workspace.png" alt="Working on a laptop in a plant-filled studio" data-direction-collage-image>
+      </figure>
+    </section>
+
+    <section class="brag-zone" id="direction" aria-labelledby="direction-title">
+      <div class="direction-cover-stage">
+        <iframe class="direction-ascii-portrait" data-direction-ascii-portrait src="assets/projects/ascii-portrait.html?v=ascii-scroll-progress-20260503a" title="ASCII portrait of Ninghuohuo" loading="eager"></iframe>
+        <div class="direction-single" aria-label="AI focus directions">
+          <div class="direction-copy">
+            <h1 id="direction-title"><span aria-hidden="true">↘</span> 我关注的方向</h1>
+            <p class="direction-intro-copy" lang="zh-CN" data-text-type data-text-type-mode="once" data-text-type-trigger="in-view" data-text-type-speed="28" aria-live="polite"><span class="text-type direction-intro-type"><span class="text-type__content" data-text-type-content>我觉得AI 不是用来一味的学的，而是拿来用的。没有具体应用场景的技术积累是无效的。接下来关于未来的学习与视频内容方向，重心会慢慢围绕真实的变现闭环和自动化工作流，用 AI 解决实际问题、重构个人生产力。</span><span class="text-type__cursor" aria-hidden="true">|</span></span></p>
+            <div class="direction-topic-list">
+              <article class="direction-topic">
+                <span class="direction-topic-label" aria-hidden="true">(a)</span>
+                <h2><span>AI产品与增长</span> <span lang="en">AI Product & Growth</span></h2>
+                <p><span lang="zh-CN">研究 AI 产品怎么被用户真正使用、传播和增长。</span> <span lang="en">Study how AI products are truly used, shared, and grown by users.</span></p>
+              </article>
+              <article class="direction-topic">
+                <span class="direction-topic-label" aria-hidden="true">(b)</span>
+                <h2><span>AI自动化工作流</span> <span lang="en">AI Automation Workflows</span></h2>
+                <p><span lang="zh-CN">用 AI 和自动化工具，把重复工作变成可复用流程。</span> <span lang="en">Turn repetitive work into reusable workflows with AI and automation tools.</span></p>
+              </article>
+              <article class="direction-topic">
+                <span class="direction-topic-label" aria-hidden="true">(c)</span>
+                <h2><span>AI一人公司变现项目</span> <span lang="en">AI Solo-Business Monetization</span></h2>
+                <p><span lang="zh-CN">探索一个人如何用 AI 做更轻、更小、更自由的生意。</span> <span lang="en">Explore how one person can build a lighter, smaller, freer business with AI.</span></p>
+              </article>
+              <article class="direction-topic">
+                <span class="direction-topic-label" aria-hidden="true">(d)</span>
+                <h2><span>AI 内容与个人品牌</span> <span lang="en">AI Content & Personal Brand</span></h2>
+                <p><span lang="zh-CN">记录一个普通人如何用 AI 做内容、做账号、做个人 IP。</span> <span lang="en">Document how an ordinary person uses AI for content, accounts, and personal IP.</span></p>
+              </article>
+              <article class="direction-topic">
+                <span class="direction-topic-label" aria-hidden="true">(e)</span>
+                <h2><span>AI变现逆向拆解</span> <span lang="en">AI Monetization Reverse Engineering</span></h2>
+                <p><span lang="zh-CN">不看宏大叙事，只研究真实的变现逻辑。</span> <span lang="en">Ignore grand narratives and study the real logic behind monetization.</span></p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section project-static-section" id="projects" aria-labelledby="projects-title">
+      <div
+        class="project-static-stage"
+        aria-label="Current projects"
+      >
+        <h1 id="projects-title"><span aria-hidden="true">↘</span> 我正在做的项目</h1>
+        <div class="project-collage" aria-label="Selected project image collage">
+          <article class="project-collage-card project-collage-card--hero" tabindex="0">
+            <img src="assets/projects/solobiz0-focus-work.png" alt="Solobiz0 project visual">
+            <div class="project-marquee" aria-hidden="true">
+              <div class="project-marquee-track">
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+                <span>Solobiz0</span>
+              </div>
+            </div>
+            <p class="project-description">内容创作自动化工作流</p>
+          </article>
+          <article class="project-collage-card project-collage-card--half" tabindex="0">
+            <img src="assets/projects/vibix-pixel-game.png" alt="Levix project visual">
+            <div class="project-marquee" aria-hidden="true">
+              <div class="project-marquee-track">
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+                <span>Levix</span>
+              </div>
+            </div>
+            <p class="project-description">人生游戏化管理工具</p>
+          </article>
+          <article class="project-collage-card project-collage-card--half" tabindex="0">
+            <img src="assets/projects/solobiz0-cyborg-portrait.png" alt="Gloopix project visual">
+            <div class="project-marquee" aria-hidden="true">
+              <div class="project-marquee-track">
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+                <span>Gloopix</span>
+              </div>
+            </div>
+            <p class="project-description">AI 图片与视频创作</p>
+          </article>
+          <article class="project-collage-card project-collage-card--wide" tabindex="0">
+            <img src="assets/projects/vibix-idea-closeup.png" alt="Vibix project visual">
+            <div class="project-marquee" aria-hidden="true">
+              <div class="project-marquee-track">
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+                <span>Vibix</span>
+              </div>
+            </div>
+            <p class="project-description">随时随地记录碎片化灵感</p>
+          </article>
+          <article class="project-collage-card project-collage-card--tall" tabindex="0">
+            <img src="assets/projects/ninglo-ai-constellation.png" alt="Ninglo project visual">
+            <div class="project-marquee" aria-hidden="true">
+              <div class="project-marquee-track">
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+                <span>Ninglo</span>
+              </div>
+            </div>
+            <p class="project-description">帮助从0到1理解 AI、使用 AI。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hobby-section" id="hobbies" aria-labelledby="hobby-title">
+      <h1 id="hobby-title"><span aria-hidden="true">↘</span> 我最近的偏好</h1>
+      <div class="hobby-layout" data-hobby-preferences>
+        <div class="hobby-copy">
+          <p class="hobby-line">
+            最近会热衷于听<button class="hobby-trigger" type="button" data-hobby-target="podcast">播客<span class="hobby-trigger-icon" style="--hobby-icon: url('assets/hobbies/icons/podcast.png');" aria-hidden="true"></span></button>和看<button class="hobby-trigger" type="button" data-hobby-target="interview">访谈<span class="hobby-trigger-icon" style="--hobby-icon: url('assets/hobbies/icons/interview.png');" aria-hidden="true"></span></button>
+          </p>
+          <p class="hobby-line">
+            痴迷<button class="hobby-trigger" type="button" data-hobby-target="vibecoding">VibeCoding<span class="hobby-trigger-icon" style="--hobby-icon: url('assets/hobbies/icons/vibecoding.png');" aria-hidden="true"></span></button>到不分昼夜的程度
+          </p>
+          <p class="hobby-line">
+            保持每周<button class="hobby-trigger" type="button" data-hobby-target="fitness">健身<span class="hobby-trigger-icon" style="--hobby-icon: url('assets/hobbies/icons/fitness.png');" aria-hidden="true"></span></button>至少4天
+          </p>
+          <p class="hobby-line">
+            两周一次的超随机<button class="hobby-trigger" type="button" data-hobby-target="hiking">爬山<span class="hobby-trigger-icon" style="--hobby-icon: url('assets/hobbies/icons/hiking.png');" aria-hidden="true"></span></button>计划
+          </p>
+          <p class="hobby-line">
+            当然还有我的可爱小猫<button class="hobby-trigger" type="button" data-hobby-target="million">百万<span class="hobby-trigger-icon" style="--hobby-icon: url('assets/hobbies/icons/million.png');" aria-hidden="true"></span></button>
+          </p>
+        </div>
+        <figure class="hobby-visual" aria-label="Preference image preview">
+          <img class="hobby-preview" src="assets/hobbies/podcast-phone.png" alt="Podcast app open on a phone" data-hobby-image="podcast">
+          <img class="hobby-preview" src="assets/hobbies/interview.png" alt="Interview conversation frame" data-hobby-image="interview">
+          <img class="hobby-preview" src="assets/hobbies/vibecoding-desk.png" alt="Keyboard and Mac mini coding workspace" data-hobby-image="vibecoding">
+          <img class="hobby-preview" src="assets/hobbies/fitness.png" alt="Weekly fitness routine" data-hobby-image="fitness">
+          <img class="hobby-preview" src="assets/hobbies/hiking.png" alt="Random hiking plan" data-hobby-image="hiking">
+          <img class="hobby-preview is-active" src="assets/hobbies/million.png" alt="Million the cat" data-hobby-image="million">
+        </figure>
+      </div>
+    </section>
+
+    <section class="energy-section" id="energy" aria-labelledby="energy-title">
+      <h1 id="energy-title"><span aria-hidden="true">↘</span> 我的力量源泉</h1>
+      <p class="energy-intro-copy" lang="zh-CN" data-text-type data-text-type-mode="once" data-text-type-trigger="in-view" data-text-type-speed="28" aria-live="polite">
+        <span class="text-type energy-intro-type">
+          <span class="text-type__content" data-text-type-content>家人，永远是我所有动力和勇气的来源。并且，我所认为的自由就是陪伴在所爱之人的方寸之间。 Family will always be the source of all my motivation and courage. And to me, freedom means staying close within the everyday space of the people I love.</span><span class="text-type__cursor" aria-hidden="true">|</span>
+        </span>
+      </p>
+      <div class="energy-stage" aria-hidden="true">
+        <div class="energy-particles particles-container" data-energy-particles></div>
+        <div class="energy-orbit orbit-container" data-energy-orbit></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-line">
+      <div>
+        <h1>联系我</h1>
+        <p class="footer-note" data-decrypted-text>一起学习和聊聊 AI、内容、产品，或者任何正在成形的想法。</p>
+        <div class="footer-contact-panel">
+          <nav class="footer-contact-list" aria-label="Contact links">
+            <a class="footer-contact-row" href="mailto:hello@ninghuohuo.ai">
+              <span>MAIL</span>
+            </a>
+            <button class="footer-contact-row" type="button" data-wechat-modal-open>
+              <span>WECHAT</span>
+            </button>
+            <a class="footer-contact-row" href="https://www.douyin.com/user/MS4wLjABAAAAw9ywuB5SWYQunLp7siyFuipj-Q9-B-ieWHOaLx_zQ7fnmJBlBzncI5t-zri2LrbK?from_tab_name=main" target="_blank" rel="noopener noreferrer">
+              <span>DOUYIN</span>
+            </a>
+            <a class="footer-contact-row" href="https://www.xiaohongshu.com/user/profile/56e9201084edcd534c0d2a58?xsec_token=ABrA-pD3uX6NkUTH52r9fyBOUeUEl5iuR2ArtB-Rq8nKo=&amp;xsec_source=pc_search" target="_blank" rel="noopener noreferrer">
+              <span>XIAOHONGSHU</span>
+            </a>
+            <a class="footer-contact-row" href="https://space.bilibili.com/3706949981964329?spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">
+              <span>BILIBILI</span>
+            </a>
+            <a class="footer-contact-row" href="https://x.com/ninghuohuor" target="_blank" rel="noopener noreferrer">
+              <span>X</span>
+            </a>
+            <a class="footer-contact-row" href="https://www.youtube.com/@ninghuohuor" target="_blank" rel="noopener noreferrer">
+              <span>YOUTUBE</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <figure class="footer-pixel-flower" aria-hidden="true">
+      <img src="assets/principles/pixel-flower-transparent.png" alt="">
+    </figure>
+    <p class="footer-since">From 2026 onwards</p>
+    <div class="wechat-modal" data-wechat-modal hidden>
+      <button class="wechat-modal-backdrop" type="button" data-wechat-modal-close aria-label="关闭微信二维码"></button>
+      <div class="wechat-modal-panel" role="dialog" aria-modal="true" aria-label="微信二维码">
+        <button class="wechat-modal-close" type="button" data-wechat-modal-close aria-label="关闭">×</button>
+        <div class="footer-qr-grid" aria-label="微信二维码">
+          <figure class="footer-qr-card">
+            <img src="assets/contact/wechat-personal-qr.png" alt="个人微信二维码">
+            <figcaption>个人微信</figcaption>
+          </figure>
+          <figure class="footer-qr-card">
+            <img src="assets/contact/wechat-group-qr.png" alt="微信群聊二维码">
+            <figcaption>微信群聊</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" type="button" aria-label="Back to top">⌃</button>
+  </footer>
+</body>
+</html>

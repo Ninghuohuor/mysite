@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Weekly fitness routine">
+  <rect width="1200" height="1500" fill="#e3e3df"/>
+  <rect x="110" y="172" width="980" height="1156" fill="#141414"/>
+  <rect x="192" y="250" width="816" height="1000" fill="#eeeeea"/>
+  <path d="M284 688h164M752 688h164M448 596v184M752 596v184M448 688h304" fill="none" stroke="#141414" stroke-width="54" stroke-linecap="round"/>
+  <circle cx="600" cy="688" r="88" fill="#777"/>
+  <rect x="258" y="958" width="684" height="56" rx="28" fill="#141414"/>
+  <text x="192" y="1136" fill="#141414" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700">4 DAYS / WEEK</text>
+  <text x="192" y="1216" fill="#858585" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="3">KEEP THE BODY ONLINE</text>
+</svg>

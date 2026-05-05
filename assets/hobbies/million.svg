@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Million the cat</title>
+  <desc id="desc">A simple black and gray poster-style cat portrait.</desc>
+  <rect width="1200" height="1500" fill="#f1f1ef"/>
+  <rect y="0" width="1200" height="170" fill="#d9d9d5"/>
+  <rect y="1330" width="1200" height="170" fill="#d9d9d5"/>
+  <path d="M300 690 392 455 510 620c31-8 62-12 94-12 35 0 68 5 99 14l118-167 82 239c81 74 126 174 126 283 0 237-190 389-425 389S178 1214 178 977c0-113 44-215 122-287Z" fill="#151515"/>
+  <path d="M383 573 344 672c34-25 72-43 113-54l-74-45Zm431 0-72 47c39 11 76 28 109 51l-37-98Z" fill="#8f8f8b"/>
+  <ellipse cx="466" cy="932" rx="54" ry="68" fill="#f1f1ef"/>
+  <ellipse cx="742" cy="932" rx="54" ry="68" fill="#f1f1ef"/>
+  <ellipse cx="466" cy="940" rx="21" ry="36" fill="#151515"/>
+  <ellipse cx="742" cy="940" rx="21" ry="36" fill="#151515"/>
+  <path d="M585 1034c12-10 30-10 42 0l31 26-51 39-52-39 30-26Z" fill="#8f8f8b"/>
+  <path d="M607 1096c-10 34-41 56-78 56m78-56c11 34 43 56 80 56" fill="none" stroke="#f1f1ef" stroke-width="20" stroke-linecap="round"/>
+  <path d="M270 1040h178M244 1114h194M754 1040h178M764 1114h194" fill="none" stroke="#8f8f8b" stroke-width="18" stroke-linecap="round"/>
+  <rect x="216" y="1230" width="780" height="36" rx="18" fill="#151515"/>
+  <text x="216" y="1322" fill="#151515" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800">MILLION</text>
+</svg>

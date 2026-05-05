@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Random hiking plan">
+  <rect width="1200" height="1500" fill="#d6d6d2"/>
+  <rect x="92" y="152" width="1016" height="1196" fill="#efefeb"/>
+  <path d="M164 1048 430 590l152 248 132-194 322 404H164Z" fill="#151515"/>
+  <path d="M430 590l54 88 98 160 132-194 88 110" fill="none" stroke="#8a8a8a" stroke-width="34" stroke-linejoin="round"/>
+  <circle cx="880" cy="356" r="82" fill="#151515"/>
+  <path d="M230 1168h740" stroke="#151515" stroke-width="46" stroke-linecap="round"/>
+  <text x="164" y="1280" fill="#151515" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">RANDOM HIKE</text>
+</svg>

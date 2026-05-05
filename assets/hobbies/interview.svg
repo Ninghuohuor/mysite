@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Interview conversation frame">
+  <rect width="1200" height="1500" fill="#d9d9d6"/>
+  <rect x="88" y="150" width="1024" height="1200" fill="#f1f1ed"/>
+  <circle cx="430" cy="520" r="150" fill="#151515"/>
+  <circle cx="770" cy="520" r="150" fill="#777"/>
+  <rect x="260" y="744" width="680" height="84" rx="42" fill="#151515"/>
+  <rect x="310" y="886" width="580" height="46" rx="23" fill="#8a8a8a"/>
+  <rect x="360" y="984" width="480" height="46" rx="23" fill="#151515"/>
+  <path d="M330 664h-84v-82M870 664h84v-82" fill="none" stroke="#151515" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="1238" fill="#151515" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">INTERVIEW</text>
+  <text x="120" y="1316" fill="#858585" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="3">BORROWED MINDS</text>
+</svg>

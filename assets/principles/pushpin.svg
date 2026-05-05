@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 96">
+  <defs>
+    <radialGradient id="pin-head" cx="35%" cy="25%" r="68%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".16" stop-color="#c9b1ff"/>
+      <stop offset=".48" stop-color="#8050ff"/>
+      <stop offset="1" stop-color="#321070"/>
+    </radialGradient>
+    <linearGradient id="pin-neck" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b74ff"/>
+      <stop offset=".5" stop-color="#5724c5"/>
+      <stop offset="1" stop-color="#210650"/>
+    </linearGradient>
+    <filter id="pin-shadow" x="-40%" y="-30%" width="180%" height="190%">
+      <feDropShadow dx="5" dy="7" stdDeviation="4" flood-color="#000000" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <ellipse cx="39" cy="80" rx="20" ry="7" fill="#000000" opacity=".12"/>
+  <g filter="url(#pin-shadow)">
+    <path d="M33 38 L44 40 L39 79 C38 84 31 83 32 78Z" fill="url(#pin-neck)"/>
+    <ellipse cx="36" cy="32" rx="23" ry="21" fill="url(#pin-head)"/>
+    <ellipse cx="28" cy="24" rx="6" ry="5" fill="#ffffff" opacity=".62"/>
+    <path d="M18 33 C26 45 45 47 57 35 C52 51 28 56 18 33Z" fill="#2b0a68" opacity=".18"/>
+  </g>
+</svg>

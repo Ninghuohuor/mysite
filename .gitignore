@@ -1,0 +1,9 @@
+.DS_Store
+.preview-*.log
+node_modules/
+dist/
+build/
+coverage/
+assets/hero-screen.mp4
+assets/hero-screen.backup-*.mp4
+assets/projects/ninglo-laptop.jpg
