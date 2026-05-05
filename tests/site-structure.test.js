@@ -16,7 +16,7 @@ test("homepage exposes the reference replica section structure", () => {
     ? fs.readFileSync(path.join(root, "orbit-images.js"), "utf8")
     : "";
 
-  assert.match(html, /<link rel="stylesheet" href="styles\.css\?v=principles-face-mask-20260504a">/);
+  assert.match(html, /<link rel="stylesheet" href="styles\.css\?v=principles-face-unmasked-20260505a">/);
   assert.match(html, /gsap(?:\.min)?\.js/);
   assert.match(html, /ScrollTrigger(?:\.min)?\.js/);
   assert.match(html, /<script src="script\.js\?v=project-static-20260503a" defer><\/script>/);
@@ -646,7 +646,7 @@ test("homepage exposes the reference replica section structure", () => {
   assert.doesNotMatch(css, /\.principles-slide\.is-active\s*{/);
   assert.match(css, /\.principles-copy\s*{[^}]*position:\s*relative;[^}]*margin-left:\s*50%;[^}]*width:\s*clamp\(240px, 24vw, 360px\);[^}]*font-size:\s*clamp\(14px, \.98vw, 20px\);/s);
   assert.match(css, /\.principles-photo-card\s*{[^}]*position:\s*absolute;[^}]*right:\s*clamp\(73px, calc\(55px \+ 2\.25vw\), 85px\);[^}]*top:\s*0;[^}]*width:\s*clamp\(105px, 12vw, 195px\);/s);
-  assert.match(css, /\.principles-photo-card::after\s*{[^}]*content:\s*"";[^}]*position:\s*absolute;[^}]*inset:\s*10% 13% 24%;[^}]*backdrop-filter:\s*blur\(18px\) saturate\(\.6\);/s);
+  assert.doesNotMatch(css, /\.principles-photo-card::after/);
   assert.match(css, /\.principles-role\s*{[^}]*margin:\s*clamp\(8px, \.85vw, 14px\) 0 0;/s);
   assert.match(css, /\.principles-quote\s*{[^}]*gap:\s*clamp\(12px, 1\.3vw, 22px\);[^}]*margin:\s*clamp\(17px, 2vw, 28px\) 0 0;[^}]*font-size:\s*clamp\(24px, 1\.65vw, 34px\);[^}]*font-weight:\s*700;/s);
   assert.doesNotMatch(css, /\.principles-scrambled-text/);
